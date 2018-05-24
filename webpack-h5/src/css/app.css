@@ -1,0 +1,6 @@
+*, *::before, *::after { box-sizing: border-box;}
+body {
+  width: 100vw; height: 100vh;
+  background: url(../img/bg.jpg) no-repeat;
+  h1 { font-size: 50px; color: #ccc}
+}
