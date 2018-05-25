@@ -2,15 +2,19 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/js/app.js',
+    app: './src/js/main.js',
   },
   output: {
-    filename: '[name].js',
+    filename: 'js/[name].[hash].js',
     path: path.resolve(__dirname,'dist'),
+  },
+  resolve: {
+    
   },
   module: {
     rules: [
@@ -20,13 +24,21 @@ module.exports = {
           path.resolve(__dirname, 'src'),
         ],
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              cacheDirectory: true, // 指定的目录将用来缓存 loader 的执行结果
+            }
+          }
+        ]
       },
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: ["css-loader", "postcss-loader"]
+          use: ["css-loader", "postcss-loader"],
+          publicPath: '../',
         })
       },
       {
@@ -44,10 +56,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new ExtractTextPlugin({
-      filename: (getPath)=> {
-        return getPath('./css/[name].css')
-      }
+      filename: './css/[name].[hash].css'
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
