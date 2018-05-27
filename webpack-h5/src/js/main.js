@@ -1,13 +1,13 @@
 import "../css/app.css";
-import fun from "./module/app";
+const { log } = require("@utils/index");
 
-console.log("hello");
-$.ajax({
-  url: "/api",
-  dataType: "json",
-  method: "get",
-  success: function(res) {
-    console.log(res);
-  }
-});
-fun();
+if (process.env.NODE_ENV === "development") {
+  $.ajax({
+    url: "/api",
+    dataType: "json",
+    method: "get",
+    success: function(res) {
+      log(res);
+    }
+  });
+}
