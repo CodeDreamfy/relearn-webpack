@@ -26,6 +26,29 @@ module.exports = smart(base, {
               limit: 8192,
               name: "images/[name].[ext]"
             }
+          },
+          {
+            loader: "image-webpack-loader",
+            options: {
+              mozjpeg: {
+                // jpeg压缩
+                progressive: true,
+                quality: 65
+              },
+              optipng: {
+                enabled: false
+              },
+              pngquant: {
+                quality: "65-90",
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              },
+              webp: {
+                quality: 75
+              }
+            }
           }
         ]
       }

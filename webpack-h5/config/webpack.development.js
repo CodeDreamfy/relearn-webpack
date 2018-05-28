@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const base = require("./webpack.base");
 const mock = require("./mock");
 const path = require("path");
+// const DashboardPlugin = require('webpack-dashboard/plugin')
 
 module.exports = smart(base, {
   module: {
@@ -34,7 +35,8 @@ module.exports = smart(base, {
     hot: true // dev server 的配置要启动 hot，或者在命令行中带参数开启
   },
   plugins: [
-    new webpack.NamedModulesPlugin(), // 用于启动 HMR 时可以显示模块的相对路径
+    // new webpack.NamedModulesPlugin(), // 用于启动 HMR 时可以显示模块的相对路径
     new webpack.HotModuleReplacementPlugin() // Hot Module Replacement 的插件
+    // new DashboardPlugin()
   ]
 });
