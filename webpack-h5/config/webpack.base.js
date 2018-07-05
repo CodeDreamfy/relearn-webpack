@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -40,7 +39,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(["../dist"]),
     new webpack.DefinePlugin({
       // webpack 内置的插件
       // 用于创建一些在编译时可以配置的全局常量,常量的值我们可以在 webpack 的配置

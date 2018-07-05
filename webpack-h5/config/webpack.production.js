@@ -3,8 +3,12 @@ const webpack = require("webpack");
 const base = require("./webpack.base");
 const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = smart(base, {
+  optimization: {
+    splitChunks: {}
+  },
   module: {
     rules: [
       {
@@ -55,6 +59,7 @@ module.exports = smart(base, {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(["dist"], { root: path.resolve(__dirname, "../") }),
     new ExtractTextPlugin({
       filename: "./css/[name].[hash].css"
     })
