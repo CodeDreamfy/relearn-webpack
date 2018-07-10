@@ -1,0 +1,82 @@
+/* common */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #0a0c0d;
+  color: #fff;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  .swiper-container {
+    height: 100%;
+    width: 100%;
+    background-size: 750px 1334px;
+    &>.swiper-wrapper {
+      height: 100%;
+      width: 100%;
+      &>.swiper-slide {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        &.bg2 {
+          background: url(../assets/bg2.jpg) no-repeat;
+          background-size: 750px 1334px;
+        }
+        & > .content-wrap {
+          position: absolute;
+          top: 85px;
+          left: 50%;
+          width: 750px;
+          margin-left: -375px;
+        }
+      }
+    }
+  }
+  .g-arrow {
+    width: 40px;
+    height: 33px;
+    position: absolute;
+    bottom: 56px;
+    left: 50%;
+    margin-left: -20px;
+    background: url(../assets/arrow.png) no-repeat;
+    background-size: 40px 33px;
+    z-index: 9; opacity: 0;
+    &.active {
+      animation: arrow 2s infinite alternate;
+    }
+  }
+  .conw-common-title {
+    height: 90px; width: 518px;
+    margin: 0 auto;
+    background: url(../assets/cont-tit-bg.png) no-repeat center bottom;
+    background-size: 518px 32px;
+    span.text {
+      width: 300px; height: 90px;
+      position: absolute; top: 0;
+      left: 50%; margin-left: -150px;
+    }
+  }
+}
+
+.IIV::-webkit-media-controls-play-button,
+ .IIV::-webkit-media-controls-start-playback-button {
+     opacity: 0;
+     pointer-events: none;
+     width: 5px;
+ }
+
+ @keyframes arrow {
+   from {
+    opacity: 0;
+    transform: translateY(-20px);
+   }
+   to {
+    opacity: 1;
+    transform: translateY(0);
+   }
+ }

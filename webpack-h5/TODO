@@ -1,16 +1,23 @@
 
 Todo:
-  ✔ 关联html @done(18-05-25 09:02)
-  ✔ 解析es6转es5 @done(18-05-25 09:02)
-  ✔ 使用postcss及其相关插件 @done(18-05-25 09:02)
-    ✔ autofix @done(18-05-25 09:02)
-    ✔ import @done(18-05-25 09:02)
-    ✔ 嵌套 @done(18-05-25 09:02)
-    ✔ 合并 @done(18-05-25 09:02)
-  ✔ 增加hash @done(18-05-25 09:02)
-  ✔ 引入第三方插件方法(已经引入了jQuery) @done(18-05-26 18:36)
-  ☐ 抽离公共文件
-  ☐ 多页面结构
-  ✔ 小图片base64大图片保持原样(url-loader) @done(18-05-28 14:10)
-  ✔ 区分环境增加配置 @done(18-05-28 14:10)
-  ✔ mock数据 @done(18-05-28 14:10)
+  webpack配置:
+    ✔ js处理-主要是es6，7转es5 @done(18-06-27 17:20)
+    ✔ css处理-主要是使用postcss相关插件 @done(18-06-27 17:20)
+    ☐ 图片处理-小图片base64，大图片压缩 -需要换成第三方插件
+    ✔ 区分开发与生产 - 前缀 @done(18-06-27 17:20)
+    ☐ 工具库如何封装挂载
+    ☐ 每个页面js如何包装调用
+    ☐ 多页面引入同一个js会去重吗
+    ☐ 适配横屏？，禁止横屏？
+
+notes:
+  `使用webpack4.0的时候extract-text-webpack-plugin应该使用@next版本`
+video参考资料:
+  https://zhaoda.net/2014/10/30/html5-video-optimization/
+  https://developer.mozilla.org/zh-CN/docs/Web/Guide/Events/Media_events
+  https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/videoz
+
+  https://x5.tencent.com/tbs/guide/video.html
+  https://aotu.io/notes/2017/01/11/mobile-video/
+  https://github.com/gnipbao/iblog/issues/11
+  https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/videoz
