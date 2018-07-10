@@ -1,0 +1,6 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/aos/dist/aos.css';
+@import './lib/reset.css';
+@import './lib/common.css';
+@import './module/index.css';
+@import './module/animate.css'

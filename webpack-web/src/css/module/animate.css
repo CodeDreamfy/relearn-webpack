@@ -1,0 +1,203 @@
+[data-aos="main-img"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: mainImg 1.2s forwards;
+  }
+}
+[data-aos="main-star1"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: shake1 2s 1.2s infinite alternate;
+  }
+}
+[data-aos="main-star2"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: shake 2s 1.4s infinite alternate;
+  }
+}
+[data-aos="main-btn"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: opacity 2s 1.8s forwards;
+  }
+}
+[data-aos="hezuo-btn"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: fadeup 2s 2.1s forwards;
+  }
+}
+
+[data-aos="step1-tit"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: fadeup 2s 2.4s forwards;
+  }
+}
+[data-aos="step1-cont1"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: opacity 2s 2.8s forwards;
+  }
+}
+
+[data-aos="step1-cont1-item1"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: fadeRight 1.2s 3s forwards;
+  }
+}
+
+[data-aos="step1-cont1-item2"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: fadeRight 1.2s 3.2s forwards;
+  }
+}
+
+[data-aos="step1-cont1-item3"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: fadeRight 1.2s 3.4s forwards;
+  }
+}
+
+[data-aos="step1-cont1-item4"] {
+  opacity: 0;
+  &.aos-animate {
+    animation: fadeRight 1.2s 3.6s forwards;
+  }
+}
+
+[data-aos="step1-cont2"] {
+  opacity: 0;
+  &.aos-animate{
+    opacity: 1;
+  }
+}
+
+[data-aos="step1-cont2-s1"] {
+  opacity: 0;
+  &.aos-animate{
+    animation: opacity 1s forwards;
+  }
+}
+
+[data-aos="step1-cont2-s2"] {
+  opacity: 0;
+  &.aos-animate{
+    animation: fadeWidth  1s .5s forwards;
+  }
+}
+
+[data-aos="step1-cont2-s3"] {
+  opacity: 0;
+  &.aos-animate{
+    animation: opacity 1s 1s forwards;
+  }
+}
+
+[data-aos="step1-cont2-s4"] {
+  opacity: 0;
+  &.aos-animate{
+    animation: fadeWidth  1s 1.5s forwards;
+  }
+}
+
+[data-aos="step1-cont2-s5"] {
+  opacity: 0;
+  &.aos-animate{
+    animation: opacity 1s 2s forwards;
+  }
+}
+
+[data-aos="hewu-fade-up"] {
+  opacity: 0;
+  transform: translateY(40px);
+  &.aos-animate {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+[data-aos="hewu-fade-right"] {
+  opacity: 0;
+  transform: translateX(140px);
+  &.aos-animate {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes fadeWidth {
+  0% {
+    opacity: 1;
+    background-position-x: -100%;
+  }
+  100% {
+    opacity: 1;
+    background-position-x: 0;
+  }
+}
+
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    transform: translateY(40px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mainImg {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+@keyframes shake {
+  0% {
+    opacity: .4;
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(.6);
+  }
+}
+@keyframes shake1 {
+  0% {
+    opacity: .4;
+    transform: scale(0.4) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(.6) rotate(180deg);
+  }
+}

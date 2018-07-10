@@ -1,0 +1,261 @@
+.main-title-wrap {
+  margin-top: 105px;
+  height: 618px;
+  .main-title {
+    position: relative;
+    width: 597px; height: 388px;
+    margin-left: 203px;
+    img { width: 100%;}
+    .star1 {
+      position: absolute; top: 52px; right: -80px;
+      width: 281px; height: 208px;
+      background: url(../assets/main-title-star1.png) no-repeat;
+    }
+    .star2 {
+      position: absolute; top: -35px; left: -148px;
+      width: 320px; height: 259px;
+      background: url(../assets/main-title-star2.png) no-repeat;
+    }
+  }
+  .main-btn {
+    width: 960px; height: 228px; overflow: hidden; margin: 0 auto;
+    background: url(../assets/earth-bg.png) no-repeat center top;
+    display: flex; justify-content: center;
+    .hezuo-btn {
+      width: 250px; height: 60px; margin: 16px auto 0;
+      background: linear-gradient(68deg, #36f9aa, #406df5);
+      text-align: center; font-size: 26px; color: #15203e;
+      line-height: 60px; border-radius: 6px;
+      cursor: pointer; font-weight: 600;
+    }
+  }
+}
+/* model1 */
+.step1 {
+  margin-top: -36px;
+  .step-tit {
+    width: 210px; height: 81px;
+    background: url(../assets/step1/step1-tit.png) no-repeat;
+    display: block; margin: 0 auto;
+  }
+  .step-cont1 {
+    margin-top: 48px;
+    height: 245px; padding: 9px 14px;
+    background: url(../assets/step1/step1-cont1-bg.png) no-repeat center center;
+    background-size: 957px 245px;
+    display: flex; justify-content: space-between; align-items: stretch;
+    &>div {
+      flex: 0 0 184px; display: flex; flex-direction: column;
+      .icon {
+        flex: 0 0 102px;
+      }
+      &>h4 {
+        font-size: 20px; color: #fff; text-align: center;
+      }
+      &>p {
+        font-size: 14px; line-height: 20px; color: #fff; text-align: center;
+        margin-top: 16px;
+      }
+      &.item1 .icon{
+        background: url(../assets/step1/step1-icon1.png) no-repeat center center;
+        background-size: 44px 33px;
+      }
+      &.item2 .icon {
+        background: url(../assets/step1/step1-icon2.png) no-repeat center center;
+        background-size: 39px 32px;
+      }
+      &.item3 .icon {
+        background: url(../assets/step1/step1-icon3.png) no-repeat center center;
+        background-size: 40px 30px;
+      }
+      &.item4 .icon {
+        background: url(../assets/step1/step1-icon4.png) no-repeat center center;
+        background-size: 28px 38px;
+      }
+      &.item3 {
+        flex: 0 0 196px;
+      }
+    }
+  }
+  .step-cont2 {
+    height: 344px; position: relative; margin-top: 40px;
+    .s1 {
+      width: 372px; height: 111px;
+      position: absolute; top: 0; left: 0;
+      background: url(../assets/step1/step1-c-1.png) no-repeat;
+      background-size: 372px 111px;
+    }
+    .s2 {
+      width: 437px; height: 145px;
+      position: absolute; bottom: 0; left: 262px;
+      background: url(../assets/step1/step1-c-2.png) no-repeat;
+      background-size: 437px 145px;
+    }
+    .s3 {
+      width: 391px; height: 118px;
+      position: absolute; top: 56px; right: 0;
+      background: url(../assets/step1/step1-c-3.png) no-repeat;
+      background-size: 391px 118px;
+    }
+    .line1 {
+      width: 160px; height: 80px;
+      position: absolute; top: 125px; left: 105px;
+      background: url(../assets/step1/step1-line1.png) no-repeat;
+      background-size: 160px 80px;
+    }
+    .line2 {
+      width: 143px; height: 56px;
+      position: absolute; bottom: 136px; left: 442px;
+      background: url(../assets/step1/step1-line2.png) no-repeat;
+      background-size: 143px 56px;
+    }
+  }
+}
+
+.gline {
+  width: 941px; height: 1px; margin: 80px auto;
+  background: url(../assets/line.png) no-repeat center top;
+  background-size: 941px 1px;
+}
+
+/* model2 */
+
+.step2 {
+  margin-top: 88px;
+  .step-tit {
+    width: 210px; height: 81px; margin: 0 auto;
+    background: url(../assets/step2/step-tit.png) no-repeat; 
+    background-size: 210px 81px;
+  }
+  .step-desc {
+    margin-top: 52px;
+    font-size: 20px; color: #3e8de5; text-align: center;
+  }
+  .step-cont1 {
+    margin-top: 48px;
+    width: 960px; height: 302px;
+    background: url(../assets/step2/step-con1-bg.png) no-repeat;
+    background-size: 960px 302px;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 0 72px;
+    .txt1 {
+      font-size: 20px; color: #bbb;
+    }
+    .num {
+      width: 373px; flex: 0 0 70px; margin-top: 18px;
+      background: url(../assets/step2/cont1-num.png) no-repeat left center;
+      background-size: 373px 70px;
+    }
+    .txt2 {
+      font-size: 20px; color: #bbb;  margin-top: 30px;
+    }
+    .txt3 {
+      font-size: 20px; color: #3e8de5;  margin-top: 20px;
+    }
+  }
+  .step-cont2 {
+    width: 450px; height: 70px; margin: 50px auto 0;
+    display: flex; align-items: stretch; justify-content: space-between;
+    .icon {
+      flex: 0 0 70px;
+      background: url(../assets/step2/step-con2-icon.png) no-repeat center center;
+      background-size: 70px 70px;
+    }
+    .cont {
+      display: flex; flex-direction: column;
+      justify-content: space-between;
+      &>p {
+        font-size: 22px; color: #bbb;
+      }
+      &>h3 {
+        font-size: 30px; color: #fff;
+      }
+    }
+  }
+}
+
+.gline2 {
+  margin-top: 50px;
+}
+
+.step3 {
+  margin-top: 120px;
+  .step-tit {
+    width: 210px; height: 81px; margin: 0 auto;
+    background: url(../assets/step3/step-tit.png) no-repeat; 
+    background-size: 210px 81px;
+  }
+  .step-cont1 {
+    width: 78px; margin: 54px auto 0;
+    &>li {
+      width: 78px; height: 78px; position: relative;
+      &>span {
+        width: 78px; height: 78px;
+      }
+      .itemdesc {
+        position: absolute; top: 34px;
+        width: 268px;
+        h4 {
+          font-size: 24px; color: #3e8de5;
+        }
+        p {
+          font-size: 14px; color: #bbb; line-height: 24px;
+          margin-top: 20px;
+        }
+      }
+      &.item1 {
+        background: url(../assets/step3/step-con1-icon1.png) no-repeat;
+        background-size: 78px 78px;
+      }
+      &.item2 {
+        background: url(../assets/step3/step-con1-icon2.png) no-repeat;
+        background-size: 78px 78px;
+      }
+      &.item3 {
+        background: url(../assets/step3/step-con1-icon3.png) no-repeat;
+        background-size: 78px 78px;
+      }
+      &.item4 {
+        background: url(../assets/step3/step-con1-icon4.png) no-repeat;
+        background-size: 78px 78px;
+      }
+      &.item5 {
+        background: url(../assets/step3/step-con1-icon5.png) no-repeat;
+        background-size: 78px 78px;
+      }
+    }
+    li:nth-of-type(even) {
+      .itemdesc {
+        left: -288px;
+        h4,p { text-align: right;}
+      }
+    }
+    li:nth-of-type(odd) {
+      .itemdesc {
+        left: 98px;
+      }
+    }
+    .step-line {
+      width: 78px; margin: 0 auto;
+      height: 122px;
+      background: url(../assets/step3/step-line.png) no-repeat center center;
+      background-size: 6px 122px;
+      &.line1 {
+        height: 120px;
+      }
+      &.line2 {
+        height: 112px;
+      }
+      &.line3 {
+        height: 112px;
+      }
+    }
+  }
+}
+
+.hezuo-btn2 {
+  width: 250px; height: 60px; margin: 90px auto 0; display: block;
+  background: url(../assets/hezuo-btn-bg2.png) no-repeat;
+  background-size: 250px 60px;
+}
