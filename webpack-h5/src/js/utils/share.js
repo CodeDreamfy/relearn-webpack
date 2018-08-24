@@ -6,7 +6,7 @@ function configShareConfig() {
 
   $.ajax({
     type: "post",
-    url: "/scy/hewu-h5/getWxConf",
+    url: "/getWxConf",
     data: { url: href },
     success: function(res) {
       let o;
